@@ -2,6 +2,7 @@
 
 import 'package:deliv_food/constants/colors.dart';
 import 'package:deliv_food/models/restaurant.dart';
+import 'package:deliv_food/screens/home/widget/custome_bottom_nav.dart';
 import 'package:deliv_food/screens/home/widget/food_list.dart';
 import 'package:deliv_food/screens/home/widget/food_list_view.dart';
 import 'package:deliv_food/screens/home/widget/restaurant_info.dart';
@@ -75,6 +76,7 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: kPrimaryColor,
@@ -85,6 +87,7 @@ class _HomePageState extends State<HomePage> {
           size: 30,
         ),
       ),
+      bottomNavigationBar: NavBar(),
     );
   }
 }
